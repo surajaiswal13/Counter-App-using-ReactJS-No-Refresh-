@@ -5,7 +5,13 @@ function App() {
   let initialState = 0
   const [state, setState] = useState(initialState) 
 
+  function increase() {
+    setState(state + 1);
+  }
 
+  function decrease() {
+    setState(state - 1);
+  }
 
   return <div className="container">
     <h1>{state}</h1>
